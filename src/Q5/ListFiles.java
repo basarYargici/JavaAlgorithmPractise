@@ -15,7 +15,7 @@ import java.io.IOException;
  * Q5) Modify the program in Figure 2.19 so that if no command-line arguments are given,
  * then the standard input is used.
  * <p>
- * Working pathname in my computer is D:\IdeaProjects\DataStructuresMidterm\src\Q5\text.txt
+ * Working pathname is .\src\Q5\text.txt
  */
 public class ListFiles {
     /**
