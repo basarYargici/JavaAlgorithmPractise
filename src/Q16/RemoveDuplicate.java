@@ -16,7 +16,6 @@ import java.util.Scanner;
  * Q16) Write a program that reads a data file containing rational numbers,
  * one per line, stores the numbers in an ArrayList, removes any duplicates, and then outputs the sum, arithmetic mean, and harmonic mean
  * of the remaining unique rational numbers.
- * <p>
  */
 public class RemoveDuplicate {
     public static void main(String[] args) throws FileNotFoundException {
@@ -135,7 +134,7 @@ public class RemoveDuplicate {
             while (scanner.hasNextLine()) {
                 arrayList.add(scanner.nextLine());
             }
-            System.out.print(pathway+" file contains: \n");
+            System.out.print(pathway + " file contains: \n");
             for (int i = 0; i < arrayList.size(); i++) {
                 if (i == arrayList.size() - 1) {
                     System.out.println(arrayList.get(i) + " numbers.");

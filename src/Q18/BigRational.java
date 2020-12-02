@@ -60,10 +60,15 @@ public class BigRational {
         }
     }
 
-//    private BigDecimal toBigDecimal(BigRational bigRational){
-//        BigDecimal bd = new BigDecimal(bigRational);
-//        return 0;
-//    }
+    public BigDecimal toBigDecimal(BigRational bigRational) {
+        // Taking numerator and denominator which are BigInteger. To use them first we convert them to string.
+        String num = bigRational.num.toString();
+        String den = bigRational.den.toString();
+        // After translating to string, we should divide num to den and it should give us double result.
+        double a = Double.parseDouble(num) / Double.parseDouble(den);
+        // Returning new BigDecimal object which val is a and MathContext is from class mathContext variable.
+        return new BigDecimal(a, mathContext);
+    }
 
     private void check00() {
         if (num.equals(BigInteger.ZERO) && den.equals(BigInteger.ZERO))
@@ -142,12 +147,14 @@ public class BigRational {
 
     private BigInteger num; // only this can be neg
     private BigInteger den; // never negative
-    private MathContext mathContext;
+    private MathContext mathContext = MathContext.UNLIMITED; // Default unlimited MathContext
 }
 
-class Test{
-//    public static void main(String[] args) {
-//        BigRational br = new BigRational(new MathContext());
-//        System.out.println(br.toString());
-//    }
+class Test {
+    public static void main(String[] args) {
+        BigRational br = new BigRational("1/9");
+        System.out.println("Before converting to BigDecimal, BigRational number : " + br.toString());
+        System.out.println("After converting to BigDecimal = " + br.toBigDecimal(br));
+
+    }
 }

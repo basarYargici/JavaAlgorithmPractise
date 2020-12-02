@@ -23,9 +23,9 @@ import java.util.Arrays;
  * Examine the documentation for the format method in the String class
  * and write a routine that outputs the two-dimensional array in a nicer
  * format, such as
- * 54   4 12 366 512
+ *  54   4 12 366 512
  * 756 192 18  27   4
- * 14  18 99 300  18
+ *  14  18 99 300  18
  */
 public class Format {
     public static void main(String[] args) {
