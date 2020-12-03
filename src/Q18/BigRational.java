@@ -10,7 +10,7 @@ import java.math.MathContext;
  * Package: Q18
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 12/1/2020
  * <p>
  * Q18-g) Modify the BigRational class to store a MathContext that can be initialized
@@ -26,6 +26,11 @@ public class BigRational {
         this(BigInteger.ZERO);
     }
 
+    /**
+     * This is the constructor which takes MathContext as a parameter.
+     *
+     * @param mathContext This is the MathContext object.
+     */
     public BigRational(MathContext mathContext) {
         this.mathContext = mathContext;
     }
@@ -60,6 +65,12 @@ public class BigRational {
         }
     }
 
+    /**
+     * This method takes BigRational object and convert it to BigDecimal.
+     *
+     * @param bigRational This is which number will be converted to BigDecimal
+     * @return BigDecimal This is the converted form of bigRational to BigDecimal object
+     */
     public BigDecimal toBigDecimal(BigRational bigRational) {
         // Taking numerator and denominator which are BigInteger. To use them first we convert them to string.
         String num = bigRational.num.toString();
@@ -132,6 +143,11 @@ public class BigRational {
         return num.equals(rhs.num) && den.equals(rhs.den);
     }
 
+    /**
+     * This method gets numerator and denominator and returns the result.
+     *
+     * @return String "Indeterminate", num or num/den results.
+     */
     public String toString() {
         if (den.equals(BigInteger.ZERO))
             if (num.compareTo(BigInteger.ZERO) < 0)
@@ -151,10 +167,14 @@ public class BigRational {
 }
 
 class Test {
+    /**
+     * This is the main function which makes use of BigRational class objects, and methods.
+     *
+     * @param args Unused.
+     */
     public static void main(String[] args) {
         BigRational br = new BigRational("1/9");
         System.out.println("Before converting to BigDecimal, BigRational number : " + br.toString());
         System.out.println("After converting to BigDecimal = " + br.toBigDecimal(br));
-
     }
 }

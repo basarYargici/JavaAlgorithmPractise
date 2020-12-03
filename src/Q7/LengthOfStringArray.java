@@ -8,7 +8,7 @@ import java.util.List;
  * Package: Q7
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/30/2020
  * <p>
  * Q7) Write a routine that prints the total length of the Strings in a String[]
@@ -27,9 +27,27 @@ public class LengthOfStringArray {
         a.add("a");
         a.add("bc");
         a.add("a b c a s");
+        System.out.print("String Array     :");
+        for (int i = 0; i < b.length; i++) {
+            if (i == b.length - 1) {
+                System.out.print(" \"" + b[i] + "\" \n");
+            } else {
+                System.out.print(" \"" + b[i] + "\",");
+            }
+        }
 
-        lengthOfStrings(b);
-        lengthOfStrings(a);
+        System.out.print("Arraylist<String>:");
+
+        for (int i = 0; i < a.size(); i++) {
+            if (i == a.size() - 1) {
+                System.out.print(" \"" + a.get(i) + "\" \n\n");
+            } else {
+                System.out.print(" \"" + a.get(i) + "\",");
+            }
+        }
+
+        System.out.println("Length of String: " + lengthOfStrings(b));
+        System.out.println("Length of ArrayList<String>: " + lengthOfStrings(a));
     }
 
     /**
@@ -38,13 +56,13 @@ public class LengthOfStringArray {
      *
      * @param stringArray This is an array of string.
      */
-    public static void lengthOfStrings(String[] stringArray) {
+    public static int lengthOfStrings(String[] stringArray) {
         int sum = 0;
 
         for (String str : stringArray) {
             sum += str.length();
         }
-        System.out.println(sum);
+        return sum;
     }
 
     /**
@@ -53,12 +71,12 @@ public class LengthOfStringArray {
      *
      * @param stringArray This is an arraylist of string.
      */
-    public static void lengthOfStrings(ArrayList<String> stringArray) {
+    public static int lengthOfStrings(ArrayList<String> stringArray) {
         int sum = 0;
 
         for (String str : stringArray) {
             sum += str.length();
         }
-        System.out.println(sum);
+        return sum;
     }
 }

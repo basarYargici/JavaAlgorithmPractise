@@ -8,11 +8,11 @@ import java.math.BigInteger;
  * Package: Q15
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/30/2020
- *
+ * <p>
  * Q15) Modify the BigRational class so that 0/0 is legal and is interpreted as
- * “Indeterminate” by toString.
+ * Indeterminate by toString.
  */
 public class BigRational {
     public static final BigRational ZERO = new BigRational();
@@ -112,6 +112,12 @@ public class BigRational {
         return num.equals(rhs.num) && den.equals(rhs.den);
     }
 
+    /**
+     * This is the part which I added to this class.
+     * This method gets numerator and denominator and returns the result.
+     *
+     * @return String "Indeterminate", num or num/den results.
+     */
     public String toString() {
         if (den.equals(BigInteger.ZERO))
             return "Indeterminate";
@@ -126,10 +132,15 @@ public class BigRational {
 }
 
 class Test {
+    /**
+     * This is the main function which makes use of BigRational class with objects and toString method.
+     *
+     * @param args Unused.
+     */
     public static void main(String[] args) {
         BigInteger bi1 = new BigInteger("0");
         BigInteger bi2 = new BigInteger("0");
         BigRational br = new BigRational(bi1, bi2);
-        System.out.format("First BigInteger %2s= %3d \nSecond BigInteger %s= %3d \nResult %12s= %3s"," ",bi1," ",bi2," ",br.toString());
+        System.out.format("First BigInteger %2s= %3d \nSecond BigInteger %s= %3d \nResult %12s= %3s", " ", bi1, " ", bi2, " ", br.toString());
     }
 }

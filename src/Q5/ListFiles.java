@@ -1,15 +1,15 @@
 package Q5;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.FileReader;
-import java.io.IOException;
 
 /**
  * Project: DataStructuresMidterm
  * Package: Q5
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/29/2020
  * <p>
  * Q5) Modify the program in Figure 2.19 so that if no command-line arguments are given,
@@ -27,7 +27,7 @@ public class ListFiles {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        if (args.length == 0) {
+        if (args.length == 0) { // If program did not executed with command-line arguments, standard input will be used to get the pathway of file.
             System.out.print("Please enter an absolute pathname for file :");
             String filename = scanner.nextLine();
             listFile(filename);
@@ -38,21 +38,23 @@ public class ListFiles {
     }
 
     /**
-     * This method will take name or pathway of file as a parameter and
+     * This method will take the name or pathway of file as a parameter and
      * will print the text inside of this file.
      *
      * @param fileName This is a filename which shows us the name or pathway of file.
      */
     public static void listFile(String fileName) {
         System.out.println("FILE: " + fileName);
-        try (Scanner fileIn = new Scanner(new FileReader(fileName))) {
+
+        try (Scanner fileIn = new Scanner(new FileReader(fileName))) { // This line will scan the inside of file and if
+            // exception throws, will terminate the program.
             while (fileIn.hasNextLine()) {
                 String oneLine = fileIn.nextLine();
                 System.out.println(oneLine);
             }
-        } catch (IOException e) {
-            System.out.println(e);
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+            System.exit(-1); // This line terminates the program
         }
-        // Close the stream
     }
 }

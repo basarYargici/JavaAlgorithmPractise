@@ -5,8 +5,9 @@ package Q6;
  * Package: Q6
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/30/2020
+ * <p>
  * Q6) Write a method that returns true if String str1 is a prefix of String str2.
  * Do not use any of the general string searching routines except charAt.
  */
@@ -19,7 +20,15 @@ public class Prefix {
      * @param args Unused.
      */
     public static void main(String[] args) {
-        System.out.println(isPrefix("str", "strSecond"));
+        String firstString = "firstString";
+        String secondString = "stringSecond";
+
+        if (isPrefix(firstString,secondString)) {
+            System.out.println(firstString +" is prefix of "+secondString);
+        }else{
+            System.out.println(firstString +" is NOT prefix of "+secondString);
+        }
+
     }
 
     /**

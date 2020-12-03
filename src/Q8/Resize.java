@@ -5,7 +5,7 @@ package Q8;
  * Package: Q8
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/30/2020
  * <p>
  * Q8) What is wrong with this code?
@@ -32,8 +32,14 @@ public class Resize {
      */
     public static void main(String[] args) {
         int[] a = {1, 2, 3};
+        System.out.print("Original array : ");
+        for (int i :a ) {
+            System.out.print(i + " ");
+        }
+        System.out.print("and the length of original array is : "+a.length);
+        System.out.println("\nResizing process started..");
         a = resize(a);
-        System.out.println(a.length);
+        System.out.println("Finally the length of resized array is : "+a.length);
     }
 
     /**
@@ -45,8 +51,9 @@ public class Resize {
     public static int[] resize(int[] arr) {
         int[] old = arr;
         arr = new int[old.length * 2 + 1];
-        for (int i = 0; i < old.length; i++)
+        for (int i = 0; i < old.length; i++) { // Copy process of old array to arr array
             arr[i] = old[i];
+        }
         return arr;
     }
 

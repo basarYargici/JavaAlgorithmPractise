@@ -5,14 +5,13 @@ package Q1;
  * Package: Q1
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/29/2020
  *
  * <p>
  * Q1) Write a program to generate the addition and multiplication tables for single-digit numbers (the table
  * that elementary school students are accustomed to seeing).
  */
-
 public class Tables {
     /**
      * This is the main function which makes use of printAddition and printMultiplication methods.
@@ -25,7 +24,7 @@ public class Tables {
     }
 
     /**
-     * This method will print the addition table to the console.
+     * This method will print the addition table from 0 to 9 to the console.
      */
     public static void printAddition() {
         System.out.println("Addition:");
@@ -40,7 +39,7 @@ public class Tables {
 
 
     /**
-     * This method will print the multiplication table to the console.
+     * This method will print the multiplication table from 0 to 9 to the console.
      */
     public static void printMultiplication() {
         System.out.println("Multiplication:");

@@ -9,13 +9,13 @@ import java.util.Scanner;
  * Package: Q4
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/29/2020
  * <p>
  * Q4) A checksum is the 32-bit integer that is the sum of the Unicode characters in a file.
  * Write a program to compute the checksum of a file that is supplied as a command-line argument.
  * <p>
- * Working pathname in my computer is  D:\IdeaProjects\DataStructuresMidterm\src\Q4\text.txt
+ * Working pathname is  .\src\Q4\text.txt
  */
 public class CheckSum {
     /**
@@ -51,16 +51,17 @@ public class CheckSum {
      * @return String This is the text of the file.
      */
     public static String readFile(String pathname) {
-        File file = new File(pathname);
         String text = "";
-        Scanner scanner;
         try {
-            scanner = new Scanner(file);
+            File file = new File(pathname);
+            Scanner scanner;
+            scanner = new Scanner(file); // This line will scan the inside of file
             while (scanner.hasNext()) {
                 text = scanner.nextLine();
             }
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
+            System.exit(-1); // This line terminates the program
         }
         return text;
     }

@@ -5,14 +5,13 @@ package Q2;
  * Package: Q2
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/29/2020
  *
  * <p>
  * Q2) Write two static methods. The first should return the maximum of three integers,
  * and the second should return the maximum of four integers.
  */
-
 public class MaximumMinimum {
     /**
      * This is the main function which makes use of findMaximumNumber methods.
@@ -22,8 +21,8 @@ public class MaximumMinimum {
     public static void main(String[] args) {
         int maxFromThreeNumbers = findMaximumNumber(1, 5, 4);
         int maxFromFourNumbers = findMaximumNumber(1, 5, 4, 8);
-        System.out.println("Maximum of three numbers is : " + maxFromThreeNumbers);
-        System.out.println("Maximum of four numbers is  : " + maxFromFourNumbers);
+        System.out.println("Maximum of 1,5,4 numbers is   : " + maxFromThreeNumbers);
+        System.out.println("Maximum of 1,5,4,8 numbers is : " + maxFromFourNumbers);
     }
 
     /**

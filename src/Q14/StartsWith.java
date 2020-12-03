@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Package: Q14
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/30/2020
  * <p>
  * Q14) Implement method startsWith which returns an ArrayList containing
@@ -16,36 +16,25 @@ import java.util.ArrayList;
  * public ArrayList<String> startsWith( String [ ] arr, char ch )
  */
 public class StartsWith {
-    public static void main(String[] args) {
-        String[] firstStringArray = {"abc", "cad", "cbe", "be"};
-        String[] secondStringArray = {"abc", "baby", "bcde", "art"};
-        String[] thirdStringArray = {"abc", "def", "ghi", "aaa"};
-        char ch1 = 'c';
-        char ch2 = 'b';
-        char ch3 = 'z';
-        ArrayList<String> firstArrayList = startsWith(firstStringArray, ch1);
-        printStartsWith(firstArrayList, ch1);
-
-        ArrayList<String> secondArrayList = startsWith(secondStringArray, ch2);
-        printStartsWith(secondArrayList, ch2);
-        ArrayList<String> thirdArrayList = startsWith(thirdStringArray, ch2);
-        printStartsWith(thirdArrayList, ch3);
-
-
-    }
-
-    public static ArrayList<String> startsWith(String[] arr, char ch) {
+    /**
+     * This method will take string array and character, returns string type of arraylist.
+     *
+     * @param arr This is the array of string which ch will be searched on as a first character.
+     * @param ch  This is the character which will be searched as a first character.
+     * @return ArrayList<String> This is the string type of arraylist which contains strings which are starts with ch.
+     */
+    public ArrayList<String> startsWith(String[] arr, char ch) {
         ArrayList<String> startsWithCh = new ArrayList<>();
         System.out.println("----------------------------");
         System.out.println("The elements which String contains:");
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) { // that prints the string
             if (i == arr.length - 1) {
                 System.out.print(arr[i]);
             } else {
                 System.out.print(arr[i] + ",");
             }
         }
-        for (String str : arr) {
+        for (String str : arr) { // that will add strings to arraylist which are starts with ch
             if (str.startsWith(String.valueOf(ch))) {
                 startsWithCh.add(str);
             }
@@ -54,7 +43,13 @@ public class StartsWith {
         return startsWithCh;
     }
 
-    public static void printStartsWith(ArrayList<String> arrayList, char ch) {
+    /**
+     * This method will take string type of arraylist and character, and prints the arraylist.
+     *
+     * @param arrayList This is the string type of arraylist which contains only elements which starts with ch.
+     * @param ch        This is the character to know which character we were searched.
+     */
+    public void printStartsWith(ArrayList<String> arrayList, char ch) {
         if (arrayList.isEmpty()) {
             System.out.println();
             System.out.println("There is no such that element which starts with " + ch + " !");
@@ -66,4 +61,30 @@ public class StartsWith {
             System.out.println("----------------------------");
         }
     }
+}
+class Test{
+    /**
+     * This is the main function which makes use of startsWith and printStartsWith methods.
+     *
+     * @param args Unused.
+     */
+    public static void main(String[] args) {
+        StartsWith sw = new StartsWith();
+        String[] firstStringArray = {"abc", "cad", "cbe", "be"};
+        String[] secondStringArray = {"abc", "baby", "bcde", "art"};
+        String[] thirdStringArray = {"abc", "def", "ghi", "aaa"};
+        char ch1 = 'c';
+        char ch2 = 'b';
+        char ch3 = 'z';
+
+        ArrayList<String> firstArrayList = sw.startsWith(firstStringArray, ch1);
+        sw.printStartsWith(firstArrayList, ch1);
+
+        ArrayList<String> secondArrayList = sw.startsWith(secondStringArray, ch2);
+        sw.printStartsWith(secondArrayList, ch2);
+
+        ArrayList<String> thirdArrayList = sw.startsWith(thirdStringArray, ch2);
+        sw.printStartsWith(thirdArrayList, ch3);
+    }
+
 }

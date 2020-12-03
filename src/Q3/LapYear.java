@@ -5,7 +5,7 @@ package Q3;
  * Package: Q3
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 11/29/2020
  *
  * <p>
@@ -25,14 +25,19 @@ public class LapYear {
      * @param args Unused.
      */
     public static void main(String[] args) {
-        System.out.println(isLeapYear(2020));
+        int year = 2004;
+        if (isLeapYear(year)) {
+            System.out.println("Year is "+ year +". Is it leap year? \nYES");
+        }else{
+            System.out.println("Year is "+ year +". Is it leap year? \nNO");
+        }
     }
 
     /**
      * This method will take a year as a parameter and will return true if the year is leap.
      *
      * @param year This is a parameter which will be computed if it is leap year or not.
-     * @return boolean true if it is a leap year else returns false.
+     * @return boolean true if it is a leap year else return false.
      */
     public static boolean isLeapYear(int year) {
         if (year % 4 == 0) {

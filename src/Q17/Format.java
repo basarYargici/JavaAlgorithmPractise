@@ -1,14 +1,11 @@
 package Q17;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  * Project: DataStructuresMidterm
  * Package: Q17
  * <p>
  *
- * @author YARGICI
+ * @author İbrahim Başar YARGICI
  * Date 12/1/2020
  * <p>
  * Q17) Suppose you would like to print a two dimensional array in which all
@@ -28,11 +25,21 @@ import java.util.Arrays;
  *  14  18 99 300  18
  */
 public class Format {
+    /**
+     * This is the main function which makes use of crateRandomizeArray and printArray methods.
+     *
+     * @param args Unused.
+     */
     public static void main(String[] args) {
         int[][] randomArray = crateRandomizeArray(4, 4, 0, 999);
         printArray(randomArray);
     }
 
+    /**
+     * This function prints the function in formatted way.
+     *
+     * @param twoDimensionalArray This is the array wh,ch will be printed.
+     */
     public static void printArray(int[][] twoDimensionalArray) {
         System.out.println("Before formatting:");
         for (int[] i : twoDimensionalArray) {
@@ -52,14 +59,22 @@ public class Format {
         }
     }
 
-    public static int[][] crateRandomizeArray(int rowCount, int columnCount, int minimumElement, int maximumElement) {
+    /**
+     * This method creates two dimensional randomized array with specified row, column counts and smallest, biggest elements.
+     * @param rowCount This is the row count of two dimensional array.
+     * @param columnCount This is the column count of two dimensional array.
+     * @param smallestValue This is the smallest value of two dimensional array.
+     * @param biggestValue This is the biggest value of two dimensional array.
+     * @return int[][] This is the randomized array with rowCount x columnCount size.
+     */
+    public static int[][] crateRandomizeArray(int rowCount, int columnCount, int smallestValue, int biggestValue) {
         int[][] twoDimensionalArray = new int[rowCount][columnCount];
-        int range = maximumElement - minimumElement + 1;
+        int range = biggestValue - smallestValue + 1;
 
         for (int[] i : twoDimensionalArray) {
             for (int j = 0; j < i.length; j++) {
                 //Math.random() returns between 0.0 and 1.0 which are double.
-                int rand = (int) (Math.random() * range) + minimumElement;
+                int rand = (int) (Math.random() * range) + smallestValue;
                 i[j] = rand;
             }
         }
