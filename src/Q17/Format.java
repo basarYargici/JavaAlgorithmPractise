@@ -31,7 +31,7 @@ public class Format {
      * @param args Unused.
      */
     public static void main(String[] args) {
-        int[][] randomArray = crateRandomizeArray(4, 4, 0, 999);
+        int[][] randomArray = createRandomizeArray(4, 4, 0, 999);
         printArray(randomArray);
     }
 
@@ -67,7 +67,7 @@ public class Format {
      * @param biggestValue This is the biggest value of two dimensional array.
      * @return int[][] This is the randomized array with rowCount x columnCount size.
      */
-    public static int[][] crateRandomizeArray(int rowCount, int columnCount, int smallestValue, int biggestValue) {
+    public static int[][] createRandomizeArray(int rowCount, int columnCount, int smallestValue, int biggestValue) {
         int[][] twoDimensionalArray = new int[rowCount][columnCount];
         int range = biggestValue - smallestValue + 1;
 
