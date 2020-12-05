@@ -1,0 +1,51 @@
+This program reverses an array or ArrayList
+of String.
+  
+begin
+  
+function main (String[] args]{ 
+     
+	declare and initialize stringArray and stringArrayList 
+	
+	print stringArray before reverse process
+	stringArray = reverse(stringArray)
+	print stringArray after reverse process
+
+	print stringArrayList before reverse process
+	stringArrayList  = reverse(stringArrayList )
+	print stringArrayList after reverse process
+		
+end
+} 
+
+function reverse(String[] arr){ 
+  
+	declare temporary array temp and j to 0
+		
+	FOR i = arr.length - 1 to 0 (included) 
+		temp[j] = arr[i]
+		decrement i
+		increment j
+	END FOR
+	
+	RETURN temp
+		
+end 
+}
+
+function reverse(ArrayList<String> arr){ 
+  
+	declare temporary ArrayList temp 
+		
+	FOR i = arr.size() - 1 to 0 (included) 
+		temp.add(arr.get(i)
+		decrement i
+	END FOR
+	
+	RETURN temp
+		
+end 
+}
+
+
+end

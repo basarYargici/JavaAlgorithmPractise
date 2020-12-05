@@ -8,7 +8,7 @@ import java.math.BigInteger;
  * Package: Q15
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q15) Modify the BigRational class so that 0/0 is legal and is interpreted as
@@ -131,6 +131,9 @@ public class BigRational {
     private BigInteger den; // never negative
 }
 
+/**
+ * This class contains main function.
+ */
 class Test {
     /**
      * This is the main function which makes use of BigRational class with objects and toString method.

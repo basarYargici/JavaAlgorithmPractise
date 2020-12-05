@@ -1,0 +1,62 @@
+This program takes two dimensional int array and determines if 
+elements monotonically increase
+  
+begin
+
+StartWith CLASS{
+	function startsWith(String[] arr, char ch){ 
+		declare startsWithCh
+		
+		print arr
+		
+		FOR each str in arr
+			
+			IF str.startsWith(String.valueOf(ch))
+				add str to arr
+			END IF
+			
+		END FOR
+			
+		RETURN startsWithCh
+		
+	end 
+	}
+
+	function printStartsWith(ArrayList<String> arrayList, char ch){ 
+		IF arrayList.isEmpty()
+			print there is no such that element which starts with ch
+		ELSE
+			FOR each str in arr
+				print str
+			END FOR
+		END IF
+				
+	end 
+	}
+
+}
+
+TEST CLASS{
+
+	function main (String[] args]{ 
+		 
+		create new sw object from StartWith class
+		declare and initialize firstStringArray, secondStringArray,
+		thirdStringArray, ch1, ch2, ch3
+		
+		declare and initialize firstArrayList over sw object call startsWith(firstStringArray, ch1)
+		sw.printStartsWith(firstArrayList, ch1)	
+		
+		declare and initialize secondArrayList over sw object call startsWith(secondStringArray, ch2)
+		sw.printStartsWith(secondArrayList, ch2)	
+		
+		declare and initialize thirdArrayList over sw object call startsWith(thirdStringArray, ch3)
+		sw.printStartsWith(thirdArrayList, ch3)
+		
+	end
+	} 
+
+}
+
+
+end

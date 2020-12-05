@@ -1,0 +1,41 @@
+This program takes file name from command-line arguments or standard input 
+and prints the text inside of this file
+  
+begin
+  
+function main (String[] args]{ 
+     
+	create scanner object to get fileName if it is not given
+	in command-line arguments
+	
+	IF fileName is not given in command-line arguments
+		filename = scanner.nextLine()
+		Call listFile(fileName)
+	END IF
+
+	
+end
+} 
+
+function listFile(String fileName){ 
+   
+	print fileName to know if the file is true or not
+	
+	Try
+		create new FileReader object from given fileName inside of Scanner 
+		object to scan the inside of file.
+	 
+		WHILE scanner.hasNextLine()
+			text = scanner.nextLine()
+			print text
+		ENDWHILE 
+	
+	IF exception throws
+		print exception
+		EXIT the program
+	END IF
+	  
+end 
+} 
+
+end

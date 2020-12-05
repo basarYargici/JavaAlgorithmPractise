@@ -1,14 +1,13 @@
 package Q7;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Project: DataStructuresMidterm
  * Package: Q7
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q7) Write a routine that prints the total length of the Strings in a String[]
@@ -55,6 +54,7 @@ public class LengthOfStringArray {
      * calculates the length of all elements in string array.
      *
      * @param stringArray This is an array of string.
+     * @return int This is the sum of all strings in stringArray
      */
     public static int lengthOfStrings(String[] stringArray) {
         int sum = 0;
@@ -70,6 +70,7 @@ public class LengthOfStringArray {
      * calculates the length of all elements in string arraylist.
      *
      * @param stringArray This is an arraylist of string.
+     * @return int This is the sum of all strings in stringArray
      */
     public static int lengthOfStrings(ArrayList<String> stringArray) {
         int sum = 0;

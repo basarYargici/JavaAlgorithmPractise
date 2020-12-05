@@ -10,7 +10,7 @@ import java.math.MathContext;
  * Package: Q18
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 12/1/2020
  * <p>
  * Q18-g) Modify the BigRational class to store a MathContext that can be initialized
@@ -166,6 +166,9 @@ public class BigRational {
     private MathContext mathContext = MathContext.UNLIMITED; // Default unlimited MathContext
 }
 
+/**
+ * This class contains main function.
+ */
 class Test {
     /**
      * This is the main function which makes use of BigRational class objects, and methods.

@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Package: Q12
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q12) Implement the following methods that return the minimum of the group

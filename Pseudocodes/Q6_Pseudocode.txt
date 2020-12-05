@@ -1,0 +1,37 @@
+This program will take two string and if first string is prefix of 
+second string print true, else false.
+  
+begin
+  
+function main (String[] args]{ 
+     
+	get firstString and secondString
+	
+	IF isPrefix(firstString,secondString)
+		print yes
+	ELSE
+		print no
+	END IF
+		
+end
+} 
+
+function isPrefix(String str1, String str2){ 
+  
+	IF str1.length() > str2.length()
+		RETURN false
+	END IF
+	
+	FOR i = 0 to str1.length()
+		IF str1.charAt(i) != str2.charAt(i)
+		RETURN false
+		END IF
+		increment i
+	END FOR
+	
+	RETURN true
+		
+end 
+}
+
+end

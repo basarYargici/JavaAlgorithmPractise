@@ -5,7 +5,7 @@ package Q6;
  * Package: Q6
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q6) Write a method that returns true if String str1 is a prefix of String str2.

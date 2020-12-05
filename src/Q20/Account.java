@@ -5,7 +5,7 @@ package Q20;
  * Package: Q20
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 12/2/2020
  * <p>
  * Q20) An Account class stores a current balance, and provides getBalance,
@@ -38,33 +38,28 @@ public class Account {
      * This method takes double parameter and add it to account balance.
      *
      * @param money This is the amount of money to deposit.
-     * @return double This is the updated balance.
      */
-    public double deposit(double money) {
+    public void deposit(double money) {
         System.out.println("\nDeposit Process: \n" + money + " TL will be deposited.");
         System.out.println("Before deposit process balance = " + balance + " TL.");
         balance += money;
         System.out.println("After deposit process balance = " + balance + " TL.");
-        return balance;
     }
 
     /**
      * This method takes double parameter and subtract it from account balance.
      *
      * @param money This is the amount of money to withdraw.
-     * @return double This is the updated balance.
      */
-    public double withdraw(double money) {
+    public void withdraw(double money) {
         System.out.println("\nWithdraw Process: \n" + money + " TL will be withdrawn if there is enough money in account.");
         if (money > balance) {
             //throw new ArithmeticException("Account does not have that much money. Current balance = " + balance+" TL.");
             System.out.println("Account does not have that much money. Current balance = " + balance + " TL.");
-            return 0;
         } else {
             balance -= money;
             System.out.println("Deposit process completed! You withdraw : " + money + " TL.\nCurrent balance =" + balance + " TL.");
         }
-        return balance;
     }
 
     /**
@@ -78,6 +73,9 @@ public class Account {
     }
 }
 
+/**
+ * This class contains main function.
+ */
 class Test {
     /**
      * This is the main function which makes use of Account class objects, and methods.

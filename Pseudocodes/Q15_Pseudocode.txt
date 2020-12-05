@@ -1,0 +1,35 @@
+This additional function makes 0/0 is legal and is interpreted 
+as "Indeterminate" by toString.
+  
+begin
+
+BigRational CLASS{
+	function toString(){ 
+			
+		IF den.equals(BigInteger.ZERO)
+			RETURN "Indeterminate"
+		IF den.equals(BigInteger.ONE)
+			RETURN num.toString()
+		ELSE
+			RETURN num + "/" + den
+		END IF
+		
+	end 
+	}
+}
+
+TEST CLASS{
+
+	function main (String[] args]{ 
+		 
+		create new bi1 and b2 objects from BigInteger class
+		create new br object from BigRational class
+		
+		print bi1, b2 and br.toString()
+		
+	end
+	} 
+
+}
+
+end

@@ -1,0 +1,91 @@
+With this program you can create your binary arrays which can only 
+has 2 type of chars like T or F!
+  
+  
+begin
+
+BinaryArray CLASS{
+
+	declare private String str
+	
+	function BinaryArray(String str){ 
+		
+		check all characters in str and if it has characters 
+		except T and F print str and throw IllegalArguementException
+		
+	end 
+	}
+	
+	function getSize(){
+	
+		RETURN str.length()
+		
+	end
+	}
+	
+	function getStr(){
+	
+		RETURN str
+		
+	end
+	}
+	
+	
+	function getCharAt(int index){ 
+		
+		IF index < str.length()
+			RETURN str.charAt(index)
+		END IF
+		
+		RETURN 0
+	end 
+	}	
+
+
+	function setCharAt(int index, char ch) { 
+	  
+		IF char is not T or F
+			inform user to enter sensible character
+		ELSE
+			print ch and index
+			str = str.substring(0, index) + ch + str.substring(index + 1)
+		END IF 
+		
+	end 
+	}
+
+	function toString(){ 
+		
+		RETURN "BinaryArray = " +str
+			
+	end 
+	}
+end
+}  
+
+TEST CLASS{
+
+	function main (String[] args]{ 
+		 
+		declare and initialize String which name is binaryArray
+		
+		create new ba object from BinaryArray and give binaryArray 
+		to constructor as a parameter
+		
+		declare and initialize index to 1
+		
+		call toString() from over ba
+		print getCharAt(index)
+		
+		insert characters to ba with ba.setCharAt(wantedPosition,character)
+		
+		print updated binaryArray = ba.getStr()
+		print size of updated binaryArray = ba.getSize()
+		
+	end
+	} 
+
+end
+} 
+
+end

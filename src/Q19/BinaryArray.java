@@ -5,7 +5,7 @@ package Q19;
  * Package: Q19
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 12/1/2020
  * <p>
  * Q19) A BinaryArray represents arbitrarily long sequences of binary variables.
@@ -107,6 +107,9 @@ public class BinaryArray {
 
 }
 
+/**
+ * This class contains main function.
+ */
 class Test {
     /**
      * This is the main function which makes use of BinaryArray class objects, and methods.

@@ -1,0 +1,87 @@
+With this program you can create your account, deposit and withdraw
+money, learn your balance.
+  
+begin
+
+Account  CLASS{
+
+	declare private double balance
+	
+	function Account(double balance){ 
+		
+		this.balance = balance
+		
+	end 
+	}
+	
+
+	function getBalance(){
+	
+		RETURN balance
+		
+	end
+	}
+	
+	
+	function deposit(double money){ 
+		
+		print balance before deposit
+		
+		balance+=money
+		
+		print balance after deposit
+		
+		RETURN balance
+	end 
+	}	
+
+
+	function withdraw(double money) { 
+	  
+		IF money > balance
+			print that the account does not have that much money
+			RETURN 0
+		ELSE
+			balance -= money
+			print balance after withdraw
+		END IF 
+		
+		RETURN balance
+		
+	end 
+	}
+
+	function toString(){ 
+		
+		RETURN "You can learn the current balance with getBalance(),deposit 
+		money with deposit(amount) and withdraw money with withdraw(amount)."
+			
+	end 
+	}
+	
+end
+}  
+
+TEST CLASS{
+
+	function main (String[] args]{ 
+		 
+		
+		
+		create new account object from Account 
+		
+		print account informations with account.toString()
+		
+		print starting balance with account.getBalance()
+		
+		withdraw 300 TL with using account.withdraw(300)
+		deposit 700 TL with using account.deposit(700)
+		withdraw 1800 TL with using account.withdraw(1800)
+				
+	end
+	} 
+
+end
+} 
+
+end

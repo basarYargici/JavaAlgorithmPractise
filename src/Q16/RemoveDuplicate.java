@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Package: Q16
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q16) Write a program that reads a data file containing rational numbers,
@@ -98,7 +98,7 @@ public class RemoveDuplicate {
      * This method will take string type of arraylist and convert it to double type of arraylist.
      *
      * @param stringArrayList This is the type of string arraylist which will be converted to double arraylist.
-     * @return ArrayList<Double> This is converted list.
+     * @return  The arraylist is converted list.
      */
     public static ArrayList<Double> convertToDouble(ArrayList<String> stringArrayList) {
         ArrayList<Double> doubleArrayList = new ArrayList<>();
@@ -129,7 +129,7 @@ public class RemoveDuplicate {
      * This method will take the type of string arraylist and remove the duplicates.
      *
      * @param stringArrayList this is the type of string arraylist which contains content of file.
-     * @return ArrayList<Double> This will be the list which duplicates removed.
+     * @return  The arraylist will be the list which duplicates removed.
      */
     public static ArrayList<Double> removeDuplicate(ArrayList<String> stringArrayList) {
         ArrayList<String> temp = new ArrayList<>();
@@ -164,7 +164,7 @@ public class RemoveDuplicate {
      * This method will take string which is pathway and return the content of that file in that pathway.
      *
      * @param pathway This is the memory location of file in storage.
-     * @return ArrayList<String> This is the list of contents in file.
+     * @return  The arraylist is the list of contents in file.
      */
     public static ArrayList<String> readFile(String pathway) {
         ArrayList<String> arrayList = new ArrayList<>();

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Package: Q9
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q9) Implement the following methods, that accept an array of double and

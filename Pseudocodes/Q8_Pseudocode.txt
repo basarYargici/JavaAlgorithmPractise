@@ -1,0 +1,31 @@
+This program takes an array and resize it.
+  
+begin
+  
+function main (String[] args){ 
+     
+	declare and initialize temporary array
+	print arr and length of arr
+	
+	arr = resize(arr)
+	print arr and length of arr
+		
+end
+} 
+
+function  resize(int[] arr) { 
+  
+	declare and initialize temporary array temp to arr
+	initialize arr to new size = temp.length*2+1
+	
+	FOR i = 0 to temp.length()
+		arr[i] = old[i]
+		increment i
+	END FOR
+	
+	RETURN arr
+		
+end 
+}
+
+end

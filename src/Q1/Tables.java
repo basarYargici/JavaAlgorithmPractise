@@ -5,8 +5,7 @@ package Q1;
  * Package: Q1
  * <p>
  *
- * @author İbrahim Başar YARGICI
- * Date 11/29/2020
+ * @author Ibrahim Basar YARGICI* Date 11/29/2020
  *
  * <p>
  * Q1) Write a program to generate the addition and multiplication tables for single-digit numbers (the table

@@ -9,7 +9,7 @@ import java.io.FileReader;
  * Package: Q5
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/29/2020
  * <p>
  * Q5) Modify the program in Figure 2.19 so that if no command-line arguments are given,

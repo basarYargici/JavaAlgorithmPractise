@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Package: Q11
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q11) Implement the following methods that reverse an array or ArrayList
@@ -74,14 +74,13 @@ public class Reverse {
      * This method will take string arraylist and return the reversed form of arraylist.
      *
      * @param arr This is a string type of arraylist.
-     * @return ArrayList<String> This is the form of reversed all elements of arr.
+     * @return    The arraylist is the form of reversed all elements of arr.
      */
     public static ArrayList<String> reverse(ArrayList<String> arr) {
         ArrayList<String> arrayList = new ArrayList<>();
-        int j = 0;
+
         for (int i = arr.size() - 1; i >= 0; i--) { // Copy process
             arrayList.add(arr.get(i));
-            j++;
         }
         return arrayList;
     }

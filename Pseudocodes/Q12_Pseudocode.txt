@@ -1,0 +1,99 @@
+This program takes minimum of the group of items passed as the parameter one dimensional or two dimensional int,
+one dimensional String and String type of Arraylist. In the case of Strings,
+the minimum is the alphabetically smallest, as determined by compareTo.
+  
+begin
+  
+function main (String[] args]{ 
+     
+	declare and initialize oneDimensionalIntArray,
+	twoDimensionalIntArray, stringArray and stringArrayList 
+	
+	print oneDimensionalIntArray 
+	print min of oneDimensionalIntArray = min(oneDimensionalIntArray)
+	
+	print twoDimensionalIntArray
+	print min of twoDimensionalIntArray = min(twoDimensionalIntArray)
+	
+	print stringArray
+	print min of stringArray = min(stringArray)
+	
+	print stringArrayList
+	print min of stringArrayList = min(stringArrayList)	
+	
+end
+} 
+
+function min(int[] arr) { 
+  
+	declare and initialize min to arr[0]
+	
+	FOR each i in arr
+		
+		IF i < arr[0]
+			min = i
+		END IF
+
+	END FOR
+	
+	RETURN min 
+		
+end 
+}
+
+function min(int[][] arr){ 
+  
+	declare and initialize min to arr[0][0]
+	
+	FOR each i in arr
+		
+		FOR each j in i
+		
+			If j < min
+			min = j
+			END IF
+			
+		END FOR
+
+	END FOR
+	
+	RETURN min 
+		
+end 
+}
+
+function min(String[] arr){ 
+  
+	declare and initialize min to arr[0]
+	
+	FOR each i in arr
+		
+		If min.compareTo(i) > 0
+			min = i
+		END IF
+
+	END FOR
+	
+	RETURN min 
+		
+end 
+}
+
+function min(ArrayList<String> arr){ 
+  
+	declare and initialize min to arr.get(0)
+	
+	FOR each i in arr
+		
+		If min.compareTo(i) > 0
+			min = i
+		END IF
+
+	END FOR
+	
+	RETURN min 
+		
+end 
+}
+
+end

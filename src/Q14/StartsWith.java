@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Package: Q14
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q14) Implement method startsWith which returns an ArrayList containing
@@ -21,7 +21,7 @@ public class StartsWith {
      *
      * @param arr This is the array of string which ch will be searched on as a first character.
      * @param ch  This is the character which will be searched as a first character.
-     * @return ArrayList<String> This is the string type of arraylist which contains strings which are starts with ch.
+     * @return    The arraylist is the string type of arraylist which contains strings which are starts with ch.
      */
     public ArrayList<String> startsWith(String[] arr, char ch) {
         ArrayList<String> startsWithCh = new ArrayList<>();
@@ -62,6 +62,10 @@ public class StartsWith {
         }
     }
 }
+
+/**
+ * This class contains main function.
+ */
 class Test{
     /**
      * This is the main function which makes use of startsWith and printStartsWith methods.
@@ -83,7 +87,7 @@ class Test{
         ArrayList<String> secondArrayList = sw.startsWith(secondStringArray, ch2);
         sw.printStartsWith(secondArrayList, ch2);
 
-        ArrayList<String> thirdArrayList = sw.startsWith(thirdStringArray, ch2);
+        ArrayList<String> thirdArrayList = sw.startsWith(thirdStringArray, ch3);
         sw.printStartsWith(thirdArrayList, ch3);
     }
 

@@ -5,8 +5,7 @@ package Q17;
  * Package: Q17
  * <p>
  *
- * @author İbrahim Başar YARGICI
- * Date 12/1/2020
+ * @author Ibrahim Basar YARGICI* Date 12/1/2020
  * <p>
  * Q17) Suppose you would like to print a two dimensional array in which all
  * numbers are between 0 and 999. The normal way of outputting each

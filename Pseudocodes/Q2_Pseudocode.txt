@@ -1,0 +1,53 @@
+This program finds the maximum of three integers and four integers.
+  
+begin
+  
+function main (String[] args]{ 
+     
+    maxFromThreeNumbers = findMaximumNumber(1, 5, 4)
+	maxFromFourNumbers = findMaximumNumber(1, 5, 4, 8)
+	
+	print maxFromThreeNumbers
+	print maxFromFourNumbers 
+	
+end
+} 
+
+function findMaximumNumber(int a, int b, int c){ 
+  
+	max = a
+	
+	IF b is bigger than max
+       max = b
+	END IF
+	
+	IF c is bigger than max
+       max = b
+	END IF
+	
+	RETURN max
+		
+end 
+} 
+function findMaximumNumber(int a, int b, int c, int d){ 
+   
+   	max = a
+	
+	IF b is bigger than max
+       max = b
+	END IF
+	
+	IF c is bigger than max
+       max = b
+	END IF
+	
+	IF d is bigger than max
+       max = d
+	END IF
+	
+	RETURN max
+  
+end 
+} 
+
+end

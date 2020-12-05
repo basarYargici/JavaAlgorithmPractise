@@ -1,0 +1,40 @@
+This program generates the addition and multiplication tables for single-digit numbers
+  
+begin
+  
+function main (String[] args]{ 
+     
+   Call the printAddition function
+   Call the printMultiplication functions
+end 	
+} 
+
+function printAddition(){ 
+  
+   FOR each i = 0 to 9  
+		
+      FOR each j = 0 to 9
+         print i+j = (i+j)
+      END FOR
+      
+      print new line
+   END FOR
+		
+end 
+} 
+
+function  printMultiplication(){ 
+   
+   FOR each i = 0 to 9  
+		
+      FOR each j = 0 to 9
+         print i*j = (i*j)
+      END FOR
+
+      print new line
+   END FOR
+	
+end 
+} 
+
+end

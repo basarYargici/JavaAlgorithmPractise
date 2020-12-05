@@ -1,0 +1,45 @@
+This program will prints the total length of the 
+given Strings and String type of ArrayLists.
+
+begin
+  
+function main (String[] args]{ 
+     
+	declare and initialize string str and arraylist arrList
+	
+	print str
+	print arrList
+	
+	print length of str = lengthOfStrings(str)
+	print length of arrList = lengthOfStrings(arrList)
+		
+end
+} 
+
+function lengthOfStrings(String[] stringArray){ 
+  
+	sum = 0
+	
+	FOR each str in stringArray
+		 sum += str.length()
+	END FOR
+	
+	RETURN sum
+		
+end 
+}
+
+function lengthOfStrings(ArrayList<String> stringArray){ 
+  
+	sum = 0
+	
+	FOR each str in stringArray
+		 sum += str.length()
+	END FOR
+	
+	RETURN sum
+		
+end 
+}
+
+end

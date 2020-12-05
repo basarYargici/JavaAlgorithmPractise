@@ -5,7 +5,7 @@ package Q13;
  * Package: Q13
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q13) Method isIncreasing returns true if in each row of the two-dimensional

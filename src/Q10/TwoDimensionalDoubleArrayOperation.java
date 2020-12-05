@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Package: Q10
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q10) Implement the following methods, that accept a two-dimensional

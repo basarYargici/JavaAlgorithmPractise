@@ -1,0 +1,89 @@
+This program takes tow dimensional array of double and prints 
+the sum, average, and mode (most common item) in the array.
+  
+begin
+  
+function main (String[] args]{ 
+     
+	declare sum, average, mode
+	declare and initialize arr 
+	
+	print arr 
+	
+	sum = sum(arr)
+    average = average(arr)
+    mode = mode(arr)
+	
+	print sum average and mode of arr
+		
+end
+} 
+
+function sum(double[][] arr) { 
+  
+	declare and initialize sum to 0
+	
+	FOR each i in arr
+		
+		FOR each j in i
+			sum += i[j];
+		END FOR
+
+	END FOR
+	
+	RETURN sum 
+		
+end 
+}
+
+function average(double[][] arr) { 
+  
+	declare and initialize sum and len to 0
+	
+	FOR each i in arr
+		
+		FOR each j in i
+			sum += i[j];
+			len++
+		END FOR
+
+	END FOR
+	
+	RETURN sum / len
+		
+end 
+}
+
+function mode(double[] arr) { 
+
+	declare temporary one dimensional temp array with size of arr
+	initialize temp by copying all elements of arr 
+  
+	declare and initialize mode, maxCount and count
+	
+	FOR i = 0 to arr.length()
+		count = 0
+		
+		FOR j = 0 to arr.length()
+			
+			IF arr[j] is equals to arr[i]
+				count++
+			END IF
+			
+		increment j
+		END FOR
+		
+		IF count is bigger than maxCount
+			maxCount = count
+			mode  = temp[i]
+		END IF
+			
+		increment i
+	END FOR
+	
+	RETURN mode
+		
+end 
+}
+
+end

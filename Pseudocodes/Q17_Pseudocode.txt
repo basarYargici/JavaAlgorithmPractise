@@ -1,0 +1,41 @@
+This program creates random arrays and prints them in a nicer format.
+
+function main (String[] args]{ 
+
+	declare and initialize two dimensional int array randomArray = createRandomizeArray(4, 4, 0, 999)
+	
+	printArray(randomArray)
+	
+end
+} 
+
+function printArray(int[][] twoDimensionalArray) {
+	
+	print twoDimensionalArray before formatting
+	
+	print twoDimensionalArray in formatted way
+		
+end 
+}
+
+function createRandomizeArray(int rowCount, int columnCount, int smallestValue, int biggestValue){ 
+	
+	declare two dimensional int array twoDimensionalArray
+	declare and initialize range to biggestValue - smallestValue + 1
+	
+	FOR each i in twoDimensionalArray
+		
+		FOR j = 0 to i.length()
+		
+			int rand = (int) (Math.random() * range) + smallestValue
+            i[j] = rand
+			
+		END FOR
+
+	END FOR
+	
+	RETURN twoDimensionalArray
+		
+end 
+}
+end

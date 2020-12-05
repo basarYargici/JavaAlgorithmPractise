@@ -1,0 +1,148 @@
+This program reads a data file containing rational numbers,one per 
+line, stores the numbers in an ArrayList, removes any duplicates,
+and then outputs the sum, arithmetic mean, and harmonic mean of the 
+remaining unique rational numbers.
+  
+begin
+  
+function main (String[] args]{ 
+     
+	Try
+		declare and initialize pathway
+		declare and initialize stringArrayList = readFile(new File(pathway).toString())
+		declare and initialize doubleArrayList = removeDuplicate(stringArrayList)
+	
+		printTheList(doubleArrayList)
+	
+		printf sum, arithmetic mean and harmonic mean
+	
+	IF exception throws
+		print exception
+		EXIT the program
+	END IF
+	
+	
+end
+} 
+
+function harmonicMean(ArrayList<Double> doubleArrayList) { 
+	declare and initialize sum to 0
+	
+	FOR each element in doubleArrayList
+		sum += (1 / element)
+	END FOR
+	
+	RETURN doubleArrayList.size() / sum
+		
+end 
+}
+
+function arithmeticMean(ArrayList<Double> doubleArrayList) { 
+  
+	RETURN sum(doubleArrayList)/doubleArrayList.size.() 
+		
+end 
+}
+
+function sum(ArrayList<Double> doubleArrayList) { 
+  
+	declare and initialize sum to 0
+	
+	FOR each element in doubleArrayList
+		sum += element
+	END FOR
+	
+	RETURN sum 
+		
+end 
+}
+
+function printTheList(ArrayList<Double> doubleArrayList) { 
+  
+	FOR each element in doubleArrayList
+		
+		print element in formatted way
+		
+	END FOR
+		
+end 
+
+function convertToDouble(ArrayList<String> stringArrayList) { 
+  
+	declare doubleArrayList and check if file contains a/b format of number
+	
+	Try
+		add numbers to doubleArrayList
+	
+	IF contains a/b format 
+		get a
+		get b
+		
+		IF b is equal to 0
+			print division by 0-error
+			continue for next iteration
+		END IF
+		
+		result = a/b
+		add result to doubleArrayList
+		
+	END IF
+	
+	printTheList(doubleArrayList)
+		
+	RETURN doubleArrayList
+		
+end 
+}
+
+function removeDuplicate(ArrayList<String> stringArrayList) { 
+  
+	declare String type of ArrayList temp and doubleArrayList
+	initialize doubleArrayList = convertToDouble(stringArrayList)
+	
+		
+	FOR i = 0 to  doubleArrayList.size()
+		
+		IF temp does not contains doubleArrayList.get(i)
+			add doubleArrayList.get(i) to temp
+		END IF
+		
+		increment i
+	END FOR
+	
+	removes all elements in doubleArraylist
+	
+	FOR each s in temp
+	
+		add s to doubleArrayList
+		
+	END FOR
+		
+	RETURN doubleArrayList
+		
+end 
+}
+
+function readFile(String pathway){ 
+   
+	declare String type of ArrayList
+	
+	Try
+		create new File object from given pathway and Scanner 
+		object to scan the inside of file.
+	 
+		WHILE scanner.hasNextLine()
+			arrayList.add(scanner.nextLine())
+		END WHILE 
+		
+		print the arrayList
+	
+	IF exception throws
+		print exception
+		EXIT the program
+	END IF
+	  
+end 
+} 
+
+end

@@ -1,0 +1,32 @@
+This program takes a year as a parameter and returns true
+if the year is a leap year, and false otherwise.
+  
+begin
+  
+function main (String[] args]{ 
+     
+    declare and initialize year 
+	
+	IF isLeapYear(year)
+		print yes
+	ELSE 
+		print no
+	
+end
+} 
+
+function isLeapYear(int year){ 
+  
+	IF year % 4 is equal to 0
+		IF year % 400 is equal to 0
+			RETURN true
+	    ELSE 
+			RETURN (year % 100 is not equal to 0)
+	END IF
+	
+	RETURN false
+	
+end 
+} 
+
+end

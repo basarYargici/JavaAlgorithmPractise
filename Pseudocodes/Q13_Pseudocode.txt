@@ -1,0 +1,56 @@
+This program takes two dimensional int array and determines if 
+elements monotonically increase
+  
+begin
+  
+function main (String[] args]{ 
+    	
+	declare and initialize firstArray, secondArray and thirdArray  
+	
+	printArray(firstArray);
+	printArray(secondArray);
+	printArray(thirdArray);
+	
+end
+} 
+
+function isIncreasing(int[][] arr){ 
+  	
+	FOR each i in arr
+		
+		FOR j = 0 to i.length -1 
+	
+			IF i[j] > i[j + 1]
+				RETURN false
+			END IF
+			
+		END FOR
+
+	END FOR
+	
+	RETURN true
+	
+end 
+}
+
+function printArray(int[][] arr){ 
+  	
+	FOR each i in arr
+		
+		FOR each j in i
+			print j
+		END FOR
+		print new line
+
+	END FOR
+	
+	IF isIncreasing(arr)
+		print that the arr is monotonically increasing
+	ELSE
+		print that the arr is not monotonically increasing
+	END IF
+			
+end 
+}
+
+end

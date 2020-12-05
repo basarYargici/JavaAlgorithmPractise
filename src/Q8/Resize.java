@@ -5,7 +5,7 @@ package Q8;
  * Package: Q8
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/30/2020
  * <p>
  * Q8) What is wrong with this code?
@@ -14,7 +14,7 @@ package Q8;
  * {
  * int [ ] old = arr;
  * arr = new int[ old.length * 2 + 1 ];
- * for( int i = 0; i < old.length; i++ )
+ * for( int i = 0; i smaller than old.length; i++ )
  * arr[ i ] = old[ i ];
  * }
  * <p>

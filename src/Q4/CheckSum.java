@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Package: Q4
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/29/2020
  * <p>
  * Q4) A checksum is the 32-bit integer that is the sum of the Unicode characters in a file.

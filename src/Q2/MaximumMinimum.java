@@ -5,7 +5,7 @@ package Q2;
  * Package: Q2
  * <p>
  *
- * @author İbrahim Başar YARGICI
+ * @author Ibrahim Basar YARGICI
  * Date 11/29/2020
  *
  * <p>

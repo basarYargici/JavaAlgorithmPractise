@@ -1,0 +1,50 @@
+This program computes the sum of all characters in a given file 
+that is supplied as a command-line argument.
+  
+begin
+  
+function main (String[] args]{ 
+     
+    print text in file = readFile(command-line argument)
+	
+    print the sum of characters in file = checkSum(readFile(command-line argument))
+
+	
+end
+} 
+
+function checkSum(String text){ 
+  
+	sum = 0
+	
+	FOR i = 0 to text.length()
+		ch = text.charAt(i)
+		sum += ch
+		increment i
+	END FOR
+	
+	RETURN sum
+		
+end 
+} 
+function readFile(String pathname){ 
+   
+	Try
+		create new file object from given pathname and 
+		scanner object to scan inside of file
+	 
+		WHILE scanner.hasNext()
+			text = scanner.nextLine()
+		END WHILE 
+	
+	IF exception throws
+		print exception
+		EXIT the program
+	END IF
+	
+	RETURN text
+  
+end 
+} 
+
+end
