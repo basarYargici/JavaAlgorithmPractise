@@ -2,7 +2,7 @@
 
 Here is my midterm of Data Structure lesson. Last Update:12/5/2020
 
-You can find source codes in src\Qi folder where i is 1..20 and Q is the question, output of programs in Output folder, flowcharts in Flowchart folder, pseudocodes in Pseudocode folder and javadocs in Javadoc folder!
+You can find source codes in src\Qi folder where i is 1..20 and Q is the question, output of programs in Output folder, flowcharts in Flowchart folder, pseudocodes in Pseudocode folder!
 <br/>
 Important note: I used notepad++ for pseudocodes and if you open pseudocodes on another text editors, it may look misaligned.
 
