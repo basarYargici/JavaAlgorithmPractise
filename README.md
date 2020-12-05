@@ -6,7 +6,7 @@ You can find source codes in src\Qi folder where i is 1..20 and Q is the questio
 <br/>
 Important note: I used notepad++ for pseudocodes and if you open pseudocodes on another text editors, it may look misaligned.
 
-##Questions
+## Questions
 * Q1) Write a program to generate the addition and multiplication tables for single-digit numbers (the table that elementary school students are accustomed to seeing).
 
 * Q2) Write two static methods. The first should return the maximum of three integers, and the second should return the maximum of four integers.
