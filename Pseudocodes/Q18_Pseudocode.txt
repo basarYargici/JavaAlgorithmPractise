@@ -1,0 +1,48 @@
+This program contains new constructor which initializes MathContext 
+and can convert BigRational number to BigDecimal number.
+  
+begin
+
+BigRational CLASS{
+	function BigRational(MathContext mathContext){ 
+			
+		initializes the mathContext of class to given mathContext
+		this.mathContext = mathContext
+		
+	end 
+	}
+	
+	function toBigDecimal(BigRational bigRational){ 
+			
+		take numerator and denominator which are BigInteger
+		convert them to string to use
+		
+		bigRational.num.toString()
+		bigRational.den.toString()
+		
+		after translating to string, divide num to den 
+		and it should give us double result
+		
+		double a = Double.parseDouble(num) / Double.parseDouble(den)
+		
+		RETURN new BigDecimal(a,mathContext)
+				
+	end 
+	}
+}
+
+TEST CLASS{
+
+	function main (String[] args]{ 
+		 
+		create new br object from BigRational class
+		
+		print br by br.toString() before converting it to  BigDecimal number
+		print br after converting it by br.toBigDecimal(br)
+		
+	end
+	} 
+
+}
+
+end
