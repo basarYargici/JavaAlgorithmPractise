@@ -1,6 +1,6 @@
-# DataStructuresMidterm
+#  Codes + Flowcharts + Pseudocodes +  JavaDoc + Output of Algorithms!
 
-Here is my midterm of Data Structure lesson. Last Update:12/5/2020
+Here is my some of algorithm practises on Java. Last Update:12/5/2020
 
 You can find source codes in src\Qi folder where i is 1..20 and Q is the question, output of programs in Output folder, flowcharts in Flowchart folder, pseudocodes in Pseudocode folder! You can download Javadoc folder to see my all questions documentation. 
 <br/>
